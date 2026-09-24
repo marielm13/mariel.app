@@ -8,17 +8,17 @@
 <meta property="og:title" content="What makes a great product manager">
 <meta property="og:description" content="It's not an exhaustive list of hard skills or mastery of every framework. It comes down to three things.">
 <meta property="og:type" content="article">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231F5C4A'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23F5F2EB' text-anchor='middle'>M</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23651C32'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23EBEAE8' text-anchor='middle'>M</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F5F2EB; --ink:#16181A; --body:#3A3A36; --muted:#5A5A55; --rule:#D9D3C7;
-  --accent:#1F5C4A;
-  --serif:'Fraunces',Georgia,serif;
-  --sans:'Instrument Sans',system-ui,-apple-system,sans-serif;
-  --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+  --paper:#EBEAE8; --ink:#241A1B; --body:#433739; --muted:#5C5153; --rule:#D2CDC9; --pop:#67823A; --accent-dark:#4A1425;
+  --accent:#651C32;
+  --serif:'Syne','Hanken Grotesk',system-ui,sans-serif;
+  --sans:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+  --mono:'Hanken Grotesk',system-ui,sans-serif;
   --pad:clamp(20px,6.5vw,96px);
 }
 *{box-sizing:border-box}
@@ -27,24 +27,25 @@ a{color:inherit}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{padding-inline:var(--pad)}
 nav{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:24px;border-bottom:1px solid var(--rule)}
-.brand{font-family:var(--serif);font-size:22px;font-weight:600;text-decoration:none}
-.links{display:flex;gap:32px;align-items:center;font-size:15px;font-weight:500}
+.brand{font-family:var(--serif);font-size:22px;font-weight:800;text-decoration:none}
+.links{display:flex;gap:32px;align-items:center;font-size:15px;font-weight:600}
 .links a{text-decoration:none}
 .links a:hover{color:var(--accent)}
-.links .pill{padding:11px 20px;border:1px solid var(--ink);border-radius:999px}
+.links .pill{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;background:var(--accent);color:var(--paper);border-radius:999px}
+.links .pill:hover{background:var(--accent-dark);color:var(--paper)}
 
 article{max-width:720px;margin:0 auto;padding-block:clamp(56px,8vw,112px) clamp(64px,8vw,120px)}
 .back{display:inline-block;font-size:15px;font-weight:500;text-decoration:none;color:var(--muted);margin-bottom:40px}
 .back:hover{color:var(--accent)}
-.meta{font-family:var(--mono);font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,5vw,60px);line-height:1.06;letter-spacing:-.02em;margin:0 0 48px}
+.meta{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:20px}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(40px,5vw,60px);line-height:1.06;letter-spacing:-.02em;margin:0 0 48px}
 .post p{font-size:19px;line-height:1.7;color:var(--body);margin:0 0 24px}
-.post h2{font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.6vw,30px);line-height:1.2;margin:56px 0 16px;color:var(--ink)}
-.post h2 .num{color:var(--accent);margin-right:8px}
-.close{margin-top:56px;padding-top:32px;border-top:1px solid var(--ink)}
-.close p{font-family:var(--serif);font-size:24px;line-height:1.4;color:var(--ink);margin:0 0 24px}
-.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none;border:1px solid var(--ink)}
-.btn:hover{background:var(--ink);color:var(--paper)}
+.post h2{font-family:var(--serif);font-weight:700;letter-spacing:-.01em;font-size:clamp(24px,2.6vw,30px);line-height:1.2;margin:56px 0 16px;color:var(--ink)}
+.post h2 .num{color:var(--pop);margin-right:8px}
+.close{margin-top:56px;padding-top:32px;border-top:3px solid var(--pop)}
+.close p{font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.4;color:var(--ink);margin:0 0 24px}
+.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;background:var(--accent);color:var(--paper)}
+.btn:hover{background:var(--accent-dark)}
 
 footer{background:var(--accent);color:var(--paper);padding-block:48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:15px}
 footer a{text-decoration:none;font-weight:600}
