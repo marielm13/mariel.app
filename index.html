@@ -113,9 +113,10 @@ nav{display:flex;justify-content:space-between;align-items:center;gap:24px;paddi
 .posts .n{display:block;font-size:14px;font-weight:700;color:var(--accent);margin-bottom:6px}
 .posts .t{font-family:var(--display);font-weight:700;font-size:24px}
 .about{padding-block:clamp(88px,10vw,144px)}
-.places{display:flex;flex-wrap:wrap;gap:8px;padding-top:8px}
-.places span{padding:8px 14px;border:1.5px solid var(--ink);border-radius:999px;font-size:14px;font-weight:600}
-.places .camino{background:var(--accent);border-color:var(--accent);color:var(--paper);font-weight:700}
+.places{display:flex;flex-wrap:wrap;gap:6px 14px;padding-top:8px}
+.places span{font-family:var(--display);font-size:20px;font-weight:700;color:var(--ink)}
+.places span:not(:last-child)::after{content:"\2192";margin-left:14px;color:var(--pop)}
+.places .now{color:var(--accent)}
 .about-body{display:flex;flex-direction:column;gap:24px;font-size:18px;line-height:1.65;color:var(--body)}
 .facts{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-top:16px;border-top:1px solid var(--rule);font-size:15px;color:var(--ink)}
 .facts .label{font-size:13px;padding-bottom:6px}
@@ -317,7 +318,7 @@ footer{display:flex;justify-content:space-between;gap:16px;margin-top:clamp(64px
 <div class="label">About</div>
 <h2>Shaped by many places.</h2>
 <div class="places" aria-label="Places I have lived and worked">
-<span>Brazil</span><span>Taipei</span><span>Shanghai</span><span>Connecticut</span><span>Beijing</span><span>Hong Kong</span><span>Singapore</span><span>Nairobi</span><span>Ann Arbor</span><span>Camino de Santiago</span><span>Washington, DC</span>
+<span>Brazil</span><span>Taipei</span><span>Shanghai</span><span>Connecticut</span><span>Beijing</span><span>Hong Kong</span><span>Singapore</span><span>Nairobi</span><span>Ann Arbor</span><span>Camino de Santiago</span><span class="now">Washington, DC</span>
 </div>
 </div>
 <div class="about-body">
