@@ -3,12 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mariel Montuori | Product Leader</title>
-<meta name="description" content="Product leader with 12+ years of experience across regulated, high-growth, and global-scale businesses. AI-enabled strategy, platform modernization, and human-centered product execution.">
-<meta property="og:title" content="Mariel Montuori | Product Leader">
-<meta property="og:description" content="Product leadership across regulated, high-growth, and global-scale businesses.">
 <meta property="og:image" content="https://mariel.app/og-image.png">
-<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,251 +12,214 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#651C32">
 <link rel="stylesheet" href="/styles.css">
+<title>Resume | Mariel Montuori</title>
+<meta name="description" content="Resume of Mariel Montuori, product leader with 12+ years across regulated, high-growth, and global-scale businesses.">
+<meta property="og:title" content="Resume | Mariel Montuori">
+<style>
+/* Resume page only. Shared tokens come from /styles.css */
+.cv-hero{background:var(--band);color:var(--band-text)}
+.cv-hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;padding-top:40px;padding-bottom:24px}
+.cv-hero h1{font-size:54px;font-weight:800;line-height:1;letter-spacing:-.035em}
+.cv-hero h1 span{color:#B7C98F}
+.cv-tag{margin-top:12px;font-size:17px;font-weight:600;color:var(--band-body)}
+.cv-links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:14px;font-size:15px;font-weight:600}
+.cv-links a{text-decoration:none;border-bottom:1.5px solid var(--band-muted);padding-bottom:1px}
+.cv-dl{display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--band-text);color:var(--band);font-weight:700;text-decoration:none;white-space:nowrap}
+.cv-hero .cv-strip-wrap{display:block;padding-top:0;padding-bottom:10px}
+.cv-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--band-rule)}
+.cv-strip div{padding:14px 24px 18px 0}
+.cv-strip div + div{padding-left:24px;border-left:1px solid var(--band-rule)}
+.cv-strip b{display:block;font-family:var(--display);font-size:24px;line-height:1.1;color:#B7C98F}
+.cv-strip span{font-size:14px;color:var(--band-body)}
+
+.cv-body{display:grid;grid-template-columns:300px minmax(0,1fr);gap:72px;padding-top:48px;padding-bottom:96px}
+.cv-side{display:flex;flex-direction:column;gap:36px;align-self:start;position:sticky;top:112px}
+.cv-side h2,.cv-main h2{font-size:20px;letter-spacing:-.01em;color:var(--accent);margin-bottom:14px}
+.cv-chips{display:flex;flex-wrap:wrap;gap:8px}
+.cv-chips span{padding:6px 13px;border-radius:999px;background:var(--chip);font-size:13px;font-weight:600}
+.cv-chips.alt span{background:transparent;border:1.5px solid var(--ink)}
+.cv-edu p{font-size:15px;line-height:1.45;padding:10px 0;border-top:1px solid var(--rule)}
+.cv-edu p span{display:block;color:var(--muted);font-size:14px}
+
+.cv-summary{font-size:19px;line-height:1.6;color:var(--body);max-width:68ch;margin-bottom:56px}
+.cv-roles{position:relative;padding-left:40px}
+.cv-roles::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:3px;background:var(--pop)}
+.cv-role{position:relative;padding-bottom:40px}
+.cv-role::before{content:"";position:absolute;left:-40px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:3px solid var(--pop)}
+.cv-now::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--accent)}
+.cv-role h3{font-size:26px;line-height:1.15}
+.cv-when{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;margin:6px 0 14px;font-size:15px;color:var(--muted)}
+.cv-when span:first-child{font-weight:700;color:var(--ink)}
+.cv-role ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.cv-role li{font-size:16px;line-height:1.55;color:var(--body);padding-left:18px;position:relative;max-width:72ch}
+.cv-role li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--pop);border-radius:2px}
+.cv-role li strong{color:var(--ink);font-weight:700}
+
+@media (max-width:980px){
+  .cv-hero h1{font-size:46px}
+  .cv-body{grid-template-columns:1fr;gap:48px}
+  .cv-side{position:static;order:2}
+  .cv-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cv-strip div:nth-child(3){padding-left:0;border-left:0}
+  .cv-strip div:nth-child(n+3){border-top:1px solid var(--band-rule)}
+}
+@media (max-width:620px){
+  .cv-hero .wrap{grid-template-columns:1fr;gap:20px;padding-top:24px}
+  .cv-hero h1{font-size:30px;white-space:nowrap}
+  .cv-tag{font-size:15px}
+  .cv-links{font-size:14px;gap:6px 16px}
+  .cv-dl{min-height:44px;width:fit-content}
+}
+@media (max-width:400px){
+  .cv-hero h1{font-size:26px}
+  .cv-hero .cv-strip-wrap{display:none}
+  .cv-strip b{font-size:24px}
+  .cv-strip div,.cv-strip div + div{padding:16px 12px 18px 0}
+  .cv-strip div:nth-child(even){padding-left:12px}
+  .cv-roles{padding-left:30px}
+  .cv-role::before{left:-30px}
+  .cv-roles::before{left:6px}
+  .cv-summary{font-size:17px}
+}
+@media print{
+  @page{margin:0.45in}
+  .site-nav,.page-foot,.cv-dl{display:none}
+  body{background:#fff}
+  .cv-hero,.cv-strip,.cv-role::before,.cv-roles::before,.cv-role li::before,.cv-chips span{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cv-hero .wrap{padding:28px 32px 20px}
+  .cv-hero h1{font-size:44px}
+  .cv-body{grid-template-columns:200px 1fr;gap:32px;padding:24px 0 0}
+  .cv-side{position:static}
+  .cv-summary{font-size:12pt;margin-bottom:20px}
+  .cv-role{padding-bottom:16px;break-inside:avoid}
+  .cv-role li{font-size:10pt}
+}
+</style>
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-
 <nav class="site-nav" aria-label="Main">
   <div class="wrap">
-    <a class="brand" href="#top">Mariel Montuori</a>
+    <a class="brand" href="/">Mariel Montuori</a>
     <div class="nav-links">
-      <a class="hide-sm" href="#ai">AI</a>
-      <a class="hide-xs" href="#work">Work</a>
+      <a class="hide-sm" href="/#ai">AI</a>
+      <a class="hide-xs" href="/#work">Work</a>
       <a class="hide-sm" href="/writing/">Writing</a>
-      <a class="hide-sm" href="#about">About</a>
+      <a class="hide-sm" href="/#about">About</a>
       <a href="/resume/">Resume</a>
-      <a class="cta" href="#contact"><span class="hide-xs">Get in touch</span><span class="show-xs">Contact</span></a>
+      <a class="cta" href="/#contact"><span class="hide-xs">Get in touch</span><span class="show-xs">Contact</span></a>
     </div>
   </div>
 </nav>
 
-<main id="top">
-
-<!-- HERO -->
-<section class="wrap grid12 hero">
-  <div class="hero-copy">
-    <div class="label">Product Leader | AI-Enabled Strategy | Washington, DC</div>
-    <h1>Product leadership across regulated, high-growth, and <span>global-scale businesses.</span></h1>
-    <p>I lead product and operations for CAPS at the College Sports Commission, the system of record for college athlete revenue share under the House v. NCAA settlement. I use AI in my work every day for thought partnership, roadmap prioritization, and user-facing report automation built with Claude, and I teach my team to do the same.</p>
-    <div class="btn-row">
-      <a class="btn btn--solid" href="#ai">AI in practice</a>
-      <a class="btn" href="#work">Selected work</a>
-      <a class="btn" href="/resume/">Resume</a>
-    </div>
-  </div>
-  <div class="photo"><img src="IMG_8502.jpeg" alt="Mariel Montuori"></div>
-</section>
-
-<!-- TIMELINE -->
-<section class="wrap" aria-labelledby="tl-h">
-  <h2 id="tl-h" class="sr-only">Career timeline</h2>
-  <ol class="timeline">
-    <li>
-      <div class="tl-years">2017 – 2023</div>
-      <div class="tl-org">Amazon</div>
-      <div class="tl-meta"><b>Global consumer scale</b> | Senior Product Manager</div>
-      <p class="tl-line">GTM lead for a multi-year platform migration of 1M+ accounts and 50M titles, with zero data loss.</p>
-    </li>
-    <li>
-      <div class="tl-years">2023 – 2025</div>
-      <div class="tl-org">Fanatics · Topps.com</div>
-      <div class="tl-meta"><b>High-growth DTC</b> | Principal Product Manager</div>
-      <p class="tl-line">Built and led the first product and engineering team for the DTC channel. Revenue grew from $150M to $250M+ in two years.</p>
-    </li>
-    <li class="now">
-      <div class="tl-years">2026 – Present</div>
-      <div class="tl-org">College Sports Commission</div>
-      <div class="tl-meta"><b>Regulated</b> | Director, CAPS Product &amp; Operations</div>
-      <p class="tl-line">Athlete revenue share reporting and roster compliance for Division I institutions.</p>
-    </li>
-  </ol>
-</section>
-
-<!-- AI -->
-<section id="ai" class="band">
+<header class="cv-hero">
   <div class="wrap">
-    <div class="grid12 band-head">
-      <div>
-        <div class="label">AI & AUTOMATION</div>
-        <h2>Applying AI in non-tech-native teams.</h2>
+    <div>
+      <h1>Mariel <span>Montuori</span></h1>
+      <p class="cv-tag">Product leader across regulated, high-growth, and global-scale businesses</p>
+      <div class="cv-links">
+        <a href="mailto:marielmontuori@gmail.com">marielmontuori@gmail.com</a>
+        <a href="https://linkedin.com/in/marielmontuori">linkedin.com/in/marielmontuori</a>
+        <a href="/">mariel.app</a>
+        <span>Washington, DC</span>
       </div>
-      <p>Recently, most of my AI work has been with non-tech-native teams or in a lean environment where AI serves as a multiplier. I build tools for my own work first, then teach teams to build theirs.</p>
     </div>
-
-    <div class="cards">
-      <article class="card card--flag">
-        <div class="label">FLAGSHIP</div>
-        <h3>Personalized attestation reports for every member school</h3>
-        <dl class="facts">
-          <div><dt><span style="text-decoration: underline;">THE PROBLEM</dt></span><dd>Building an on-platform attestation progress tracker or custom report wasn't feasible ahead of launch. I wanted to make sure both compliance officers and the senior leaders accountable for attestation (don't work in CAPS day-to-day) had the same visibility.</dd></div>
-          <div><dt><span style="text-decoration: underline;">WHAT I BUILT</dt></span><dd>Used Claude to design an html template and python script to generate a personalized report for each member school, then automated delivery on our EMS to the correct recipients.</dd></div>
-          <div><dt><span style="text-decoration: underline;">WHAT CHANGED</dt></span><dd>Every two weeks for eight weeks, 319 schools and 35 conferences received a personalized progress report, reaching 1,000+ school and 100+ conference leaders. As of today, nearly all 319 schools have completed attestation (96%).</dd></div>
-          <div><dt><span style="text-decoration: underline;">VALIDATION</dt></span><dd> Spot checks on report output and recipients before each send. Open tracking to confirm reports reached the right leaders.</dd></div>
-        </dl>
-        <a class="more" href="/work/report-automation/">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-      </article>
-
-      <article class="card">
-        <div class="label">ENABLEMENT</div>
-        <h3>Rolling out AI at the College Sports Commission</h3>
-        <p>Led the company's enterprise AI rollout. I coached teams as they built their own Claude skills and artifacts, and taught automation well beyond writing better prompts. 30 people across 3 teams onboarded.</p>
-      </article>
-
-      <article class="card">
-        <div class="label">PRIORITIZATION</div>
-        <h3>AI-assisted roadmap prioritization</h3>
-        <p>Built a Claude project loaded with CAPS context and user feedback, then worked through the roadmap to stack-rank a 75-feature backlog. Together we cut redundant features and anything that didn't solve the right problem, leaving 23 prioritized items. Created a skill to repeat the process at every roadmap checkpoint</p>
-      </article>
-
-      <article class="card">
-        <div class="label">AUTOMATION</div>
-        <h3>Campaign automation</h3>
-        <p>Wrote Python scripts on the Mailchimp API to automate communications to 300+ member institutions.</p>
-      </article>
-
-      <article class="card">
-        <div class="label">CCUSTOM AI WORKFLOWS</div>
-        <h3>Custom Claude skills</h3>
-        <p>Built Claude skills that encode my writing standards and research workflows, so every draft and brief starts from the same bar.</p>
-      </article>
+    <a class="cv-dl" href="/resume/Mariel_Montuori_Resume.pdf" download>Download PDF <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+  </div>
+  <div class="wrap cv-strip-wrap">
+    <div class="cv-strip">
+      <div><b>96%</b><span>of 319 institutions completed attestation in year one</span></div>
+      <div><b>$150M → $250M+</b><span>Topps.com DTC revenue</span></div>
+      <div><b>16,000+</b><span>manual transactions eliminated</span></div>
+      <div><b>1M+ / 50M</b><span>accounts / titles migrated, zero data loss</span></div>
     </div>
   </div>
-</section>
+</header>
 
-<!-- SELECTED WORK -->
-<section id="work" class="wrap section">
-  <div class="section-head">
-    <h2>Selected work</h2>
-    <div class="label">Three industries, three scales</div>
-  </div>
+<main class="wrap cv-body">
+  <aside class="cv-side">
+    <section>
+      <h2>Strengths</h2>
+      <div class="cv-chips"><span>AI-enabled strategy</span><span>Platform modernization</span><span>Regulatory compliance</span><span>Cross-functional influence</span><span>Vendor management</span><span>Human-centered execution</span></div>
+    </section>
+    <section>
+      <h2>Tools I build with</h2>
+      <div class="cv-chips alt"><span>Claude</span><span>Claude Cowork</span><span>Python</span><span>Mailchimp API</span><span>Shopify</span><span>ContentStack</span></div>
+    </section>
+    <section class="cv-edu">
+      <h2>Education</h2>
+      <p>MBA, University of Michigan, Ross School of Business<span>2015 – 2017</span></p>
+      <p>BA, Tufts University<span>2004 – 2008</span></p>
+    </section>
+  </aside>
 
-  <article class="work grid12">
-    <div class="work-who"><b>College Sports Commission</b><span>2026 to present<br>Director, CAPS Product &amp; Operations</span></div>
-    <div class="work-body">
-      <h3>Designing the first year-end attestation under the House settlement</h3>
-      <p>At the close of the first cap year under the House v. NCAA settlement, every participating school had to attest that it complied with the new rules. There was no process to inherit. I designed the year-end close-out in CAPS that lets schools validate their revenue share, scholarship, and roster data, correct what's wrong, and then attest.</p>
-      <div class="chips"><span>Regulatory compliance</span><span>0 → 1 process design</span><span>AI automation</span></div>
-      <a class="more" href="/work/attestation/">Read the case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>319</b><span>Division I institutions</span></div>
-      <div class="stat"><b>96%</b><span>completed attestation in year one</span></div>
-      <div class="stat"><b>5,800+</b><span>teams across Division I</span></div>
-    </div>
-  </article>
-
-  <article class="work grid12">
-    <div class="work-who"><b>Fanatics · Topps.com</b><span>2023 – 2025<br>Principal Product Manager</span></div>
-    <div class="work-body">
-      <h3>Scaling a DTC business with its first in-house product team</h3>
-      <p>Built the first in-house product and engineering team for the Topps.com DTC business and led a headless migration to Shopify and ContentStack, bringing stack ownership in-house and enabling merchandising and customer service to manage content, inventory, and site operations directly. Led an SEO-critical re-architecture of the SKU and category taxonomy.</p>
-      <div class="chips"><span>DTC eCommerce</span><span>Platform modernization</span><span>Team building</span></div>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>$150M → $250M+</b><span>revenue in two years</span></div>
-      <div class="stat"><b>30%+ / 99%+</b><span>site speed gain / uptime</span></div>
-      <div class="stat"><b>~15%</b><span>growth in product discovery</span></div>
-    </div>
-  </article>
-
-  <article class="work grid12">
-    <div class="work-who"><b>Amazon Kindle</b><span>2017 – 2023<br>Senior Product Manager</span></div>
-    <div class="work-body">
-      <h3>Migrating ComiXology onto the Kindle platform</h3>
-      <p>Led the migration of 1M+ accounts and 50M titles from ComiXology to Kindle with zero data loss and improved system efficiency. Launched Kindle's panel-by-panel immersive comics reading experience across iOS, Android, and web, leading a team of 14 engineers and 2 UX designers.</p>
-      <div class="chips"><span>Platform migration</span><span>Consumer apps</span><span>Cross-platform</span></div>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>1M+ / 50M</b><span>accounts / titles migrated</span></div>
-      <div class="stat"><b>Zero</b><span>data loss</span></div>
-      <div class="stat"><b>50K+</b><span>MAUs engaged by the new reader</span></div>
-    </div>
-  </article>
-</section>
-
-<!-- PRODUCT ETHOS -->
-<section id="how" class="how-band">
-  <div class="wrap">
-    <div class="how-head">
-      <h2>My product ethos</h2>
-    </div>
-    <div class="how-grid">
-      <div class="how-item"><h3>Adaptability</h3><p>A great PM can join any team or industry and make an impact. Execution, judgment, curiosity, and customer obsession transfer everywhere, while deep subject-matter expertise can come with fixed habits that stifle creative problem solving.</p></div>
-      <div class="how-item"><h3>Curiosity</h3><p>Good product work takes curiosity about your industry and the world beyond it. The inspiration for solving a problem often comes from unexpected places and people, and you only find it without blinders on.</p></div>
-      <div class="how-item"><h3>Customer obsession</h3><p>A PM's job is to be the customer's voice and advocate, whether they're buying a book or building a roster. Sometimes that means building things that don't directly feed the bottom line. When customers feel heard and friction disappears, loyalty follows.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- WRITING -->
-<section id="writing" class="writing-band">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="label">WRITING</div>
-        <h2>Notes on product and AI</h2>
-      </div>
-      <a class="more" href="/writing/">All writing <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
-    </div>
-    <div class="tiles tiles--home">
-      <a class="tile" href="/writing/ai-fomo-is-real/">
-        <div class="kicker"><span class="tag">AI leadership</span><span class="time">2 min read</span></div>
-        <h2>AI FOMO is real</h2>
-        <p class="q">The shift is from doing things faster to thinking better.</p>
-        <span class="more">Read the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-      </a>
-      <a class="tile" href="/writing/what-makes-a-great-pm/">
-        <div class="kicker"><span class="tag">Product management</span><span class="time">2 min read</span></div>
-        <h2>What makes a great product manager</h2>
-        <p class="q">Product management is less about authority and more about influence.</p>
-        <span class="more">Read the post <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-      </a>
-      <a class="tile tile--series" href="https://linkedin.com/in/marielmontuori" target="_blank" rel="noopener">
-        <div class="kicker"><span class="tag">Series on LinkedIn</span></div>
-        <h2>The AI Gap</h2>
-        <p>A series on the gap between AI adoption mandates and the guidance people need to use AI well.</p>
-        <span class="more">Follow on LinkedIn <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
-      </a>
+  <div class="cv-main">
+    <p class="cv-summary">Product leader with 12+ years of experience driving platform modernization, scaling $100M+ eCommerce businesses, and delivering customer-centric digital experiences across regulated and high-growth environments. Known for creating structure in ambiguity, aligning complex stakeholders within matrixed organizations, and translating compliance and operational requirements into scalable product systems.</p>
+    <h2>Experience</h2>
+    <div class="cv-roles">
+    <article class="cv-role cv-now">
+      <header>
+        <h3>College Sports Commission</h3>
+        <div class="cv-when"><span>Director, CAPS Product &amp; Operations</span><span>Jan 2026 – Present</span></div>
+      </header>
+      <ul>
+        <li><strong>Brought nearly all 319 Division I institutions (96%) through the first year-end attestation</strong> by designing the close-out process from scratch, letting schools validate and correct revenue share, scholarship, and roster data before a five-step sign-off chain</li>
+        <li><strong>Kept 1,000+ school leaders and 100+ conference leaders on track for a hard compliance deadline</strong> by using Claude Cowork and the terminal to generate 354 personalized progress reports and automate delivery every two weeks</li>
+        <li><strong>Eliminated 16,000+ manual transactions and cut related support escalations from several hundred to under 60</strong> by shipping NCAA Transfer Portal automation for football and basketball, unblocking receiving schools from processing transfers</li>
+        <li><strong>Turned a 75-feature backlog into 23 prioritized items and a twice-monthly release cadence</strong> by building CAPS's planning and lifecycle infrastructure from scratch, using AI-assisted prioritization and 16+ stakeholder and user sessions to connect SMEs directly to the roadmap</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>Fanatics Collectibles (Topps.com)</h3>
+        <div class="cv-when"><span>Principal Product Manager</span><span>Apr 2023 – Oct 2025</span></div>
+      </header>
+      <ul>
+        <li><strong>Grew revenue from $150M to $250M+ in two years</strong> by building the first in-house product and engineering team for the Topps.com DTC business and leading product strategy, internal tools for scaling new licenses, and the end-to-end customer experience</li>
+        <li><strong>Improved site speed 30%+ and held uptime above 99%</strong> by leading a headless migration to Shopify and ContentStack that brought stack ownership in-house and let merchandising and customer service manage content, inventory, and site operations directly</li>
+        <li><strong>Grew product discovery ~15% and improved search conversion</strong> by leading an SEO-critical site re-architecture, re-indexing the SKU and category taxonomy, and launching intent-driven category pages</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>Amazon</h3>
+        <div class="cv-when"><span>Senior Product Manager</span><span>Sep 2017 – Mar 2023</span></div>
+      </header>
+      <ul>
+        <li><strong>Migrated 1M+ accounts and 50M titles from ComiXology to Kindle with zero data loss</strong> as GTM lead for the multi-year platform migration</li>
+        <li><strong>Generated $5M+ in new annual revenue and 20%+ YoY growth</strong> by creating a vendor-sponsored recommendation tool for Baby Registry that unlocked a scalable ad model for niche markets</li>
+        <li><strong>Lifted mobile conversion 10% and engagement 15%</strong> by redesigning Baby Registry's item-selection flow based on A/B testing and user insights</li>
+        <li><strong>Increased engagement and retention for 50K+ monthly active users</strong> by launching Kindle's panel-by-panel comics reader across iOS, Android, and web, leading 14 engineers and 2 UX designers</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>Freelance Consultant</h3>
+        <div class="cv-when"><span>Marketing &amp; eCommerce Operations Consultant</span><span>2012 – 2015</span></div>
+      </header>
+      <ul>
+        <li><strong>Delivered 40% YoY sales growth and scaled BaoBae.com from 12 to 50+ vendor partners</strong> as first hire, building brand, community, and marketing strategy from the ground up</li>
+        <li><strong>Expanded visibility for emerging e-commerce brands</strong> by producing 200+ person events and influencer campaigns</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>American Chamber of Commerce in China</h3>
+        <div class="cv-when"><span>Program Manager</span><span>Mar 2010 – Mar 2012</span></div>
+      </header>
+      <ul>
+        <li><strong>Doubled programming year over year</strong> across several committees</li>
+        <li><strong>Tripled the internship program</strong> by expanding recruitment and supervising 10+ interns annually</li>
+      </ul>
+    </article>
     </div>
   </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="wrap about2">
-  <div class="label">ABOUT ME</div>
-  <h2 class="about2-h">Shaped by many places.</h2>
-  <ol class="route route--big" aria-label="Places I've lived, in order">
-    <li>Brazil</li><li>Taipei</li><li>Shanghai</li><li>Connecticut</li><li>Beijing</li><li>Hong Kong</li><li>Singapore</li><li>Nairobi</li><li>Ann Arbor</li><li class="here">Washington, DC</li>
-  </ol>
-  <div class="about2-body">
-    <div class="about2-text">
-      <p>I can't use a product without redesigning it in my head. Although I started my career in marketing, which was creative and fun, I often found myself wanting to fix the things I was selling. Product gave me the ownership I was missing.</p>
-      <p>I was born in Brazil, grew up in Taipei and Shanghai, and spent much of my adult life abroad. Years of moving around and living in other cultures made me comfortable with change, and with being uncomfortable. It also made me curious about, and appreciative of, people who see the world differently.</p>
-      <p>Outside of work, you can find me on my Kindle, reading a new fantasy novel or a pick for my book club. Most evenings end on the couch with my dog, Zuzu, and a good show, usually a British crime drama or sci-fi. I'm also the friend everyone asks for recommendations, from what to read or watch next to the latest beauty trend or the best product for their home or pet. I do a lot of research and product testing. When I'm not doing that, I'm going on walks/hikes, going to my favorite watering hole for Trivia, tinkering with my apartment's decor, or dabbling in a new hobby.</p>
-    </div>
-    <div class="about2-facts">
-      <div><small>Education</small>MBA, Michigan Ross<br>BA, Tufts University</div>
-      <div><small>Previously</small>Fanatics Collectibles<br>Amazon</div>
-      <div><small>Languages</small>[Fluent] Portuguese and English<br>[Conversational] French and Spanish<br>[Rusty] Mandarin<br>[Learning now!] Italian</div>
-    </div>
-  </div>
-</section>
-
 </main>
 
-<!-- CONTACT -->
-<footer id="contact" class="contact">
-  <div class="wrap">
-    <h2>Let's talk about what you're building.</h2>
-    <div class="btn-row">
-      <a class="btn" href="mailto:marielmontuori@gmail.com">Email Me</a>
-      <a class="btn" href="https://linkedin.com/in/marielmontuori">Connect on LinkedIn</a>
-      <a class="btn" href="/resume/">Check out my Resume</a>
-    </div>
-    <div class="footer-row"><span>© 2026 Mariel Montuori</span><span>Washington, DC</span></div>
-  </div>
+<footer class="wrap page-foot">
+  <span>© 2026 Mariel Montuori, Washington, DC</span>
+  <span><a href="mailto:marielmontuori@gmail.com">marielmontuori@gmail.com</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/marielmontuori">LinkedIn</a></span>
 </footer>
-
 </body>
 </html>
