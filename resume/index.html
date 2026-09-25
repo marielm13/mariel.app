@@ -11,6 +11,78 @@
 <title>Resume | Mariel Montuori</title>
 <meta name="description" content="Resume of Mariel Montuori, product leader with 12+ years across regulated, high-growth, and global-scale businesses.">
 <meta property="og:title" content="Resume | Mariel Montuori">
+<style>
+/* Resume page only. Shared tokens come from /styles.css */
+.cv-hero{background:var(--band);color:var(--band-text)}
+.cv-hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end;padding-top:72px;padding-bottom:40px}
+.cv-hero h1{font-size:84px;font-weight:800;line-height:.95;letter-spacing:-.04em}
+.cv-hero h1 span{display:block;color:#B7C98F}
+.cv-tag{margin-top:20px;font-size:17px;font-weight:600;color:var(--band-body)}
+.cv-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;font-size:15px;font-weight:600}
+.cv-links a{text-decoration:none;border-bottom:1.5px solid var(--band-muted);padding-bottom:1px}
+.cv-dl{display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--band-text);color:var(--band);font-weight:700;text-decoration:none;white-space:nowrap}
+.cv-strip{margin-bottom:8px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--band-rule)}
+.cv-strip div{padding:22px 24px 26px 0}
+.cv-strip div + div{padding-left:24px;border-left:1px solid var(--band-rule)}
+.cv-strip b{display:block;font-family:var(--display);font-size:30px;line-height:1.1;color:#B7C98F}
+.cv-strip span{font-size:14px;color:var(--band-body)}
+
+.cv-body{display:grid;grid-template-columns:300px minmax(0,1fr);gap:72px;padding-top:64px;padding-bottom:96px}
+.cv-side{display:flex;flex-direction:column;gap:36px;align-self:start;position:sticky;top:24px}
+.cv-side h2,.cv-main h2{font-size:20px;letter-spacing:-.01em;color:var(--accent);margin-bottom:14px}
+.cv-chips{display:flex;flex-wrap:wrap;gap:8px}
+.cv-chips span{padding:6px 13px;border-radius:999px;background:var(--chip);font-size:13px;font-weight:600}
+.cv-chips.alt span{background:transparent;border:1.5px solid var(--ink)}
+.cv-edu p{font-size:15px;line-height:1.45;padding:10px 0;border-top:1px solid var(--rule)}
+.cv-edu p span{display:block;color:var(--muted);font-size:14px}
+
+.cv-summary{font-size:19px;line-height:1.6;color:var(--body);max-width:68ch;margin-bottom:56px}
+.cv-roles{position:relative;padding-left:40px}
+.cv-roles::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:3px;background:var(--pop)}
+.cv-role{position:relative;padding-bottom:40px}
+.cv-role::before{content:"";position:absolute;left:-40px;top:6px;width:17px;height:17px;border-radius:50%;background:var(--bg);border:3px solid var(--pop)}
+.cv-now::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--accent)}
+.cv-role h3{font-size:26px;line-height:1.15}
+.cv-when{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px 16px;margin:6px 0 14px;font-size:15px;color:var(--muted)}
+.cv-when span:first-child{font-weight:700;color:var(--ink)}
+.cv-role ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.cv-role li{font-size:16px;line-height:1.55;color:var(--body);padding-left:18px;position:relative;max-width:72ch}
+.cv-role li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;background:var(--pop);border-radius:2px}
+.cv-role li strong{color:var(--ink);font-weight:700}
+
+@media (max-width:980px){
+  .cv-hero h1{font-size:60px}
+  .cv-body{grid-template-columns:1fr;gap:48px}
+  .cv-side{position:static;order:2}
+  .cv-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cv-strip div:nth-child(3){padding-left:0;border-left:0}
+  .cv-strip div:nth-child(n+3){border-top:1px solid var(--band-rule)}
+}
+@media (max-width:620px){
+  .cv-hero .wrap{grid-template-columns:1fr;padding-top:48px}
+  .cv-hero h1{font-size:46px}
+  .cv-strip b{font-size:24px}
+  .cv-strip div,.cv-strip div + div{padding:16px 12px 18px 0}
+  .cv-strip div:nth-child(even){padding-left:12px}
+  .cv-roles{padding-left:30px}
+  .cv-role::before{left:-30px}
+  .cv-roles::before{left:6px}
+  .cv-summary{font-size:17px}
+}
+@media print{
+  @page{margin:0.45in}
+  .site-nav,.page-foot,.cv-dl{display:none}
+  body{background:#fff}
+  .cv-hero,.cv-strip,.cv-role::before,.cv-roles::before,.cv-role li::before,.cv-chips span{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cv-hero .wrap{padding:28px 32px 20px}
+  .cv-hero h1{font-size:44px}
+  .cv-body{grid-template-columns:200px 1fr;gap:32px;padding:24px 0 0}
+  .cv-side{position:static}
+  .cv-summary{font-size:12pt;margin-bottom:20px}
+  .cv-role{padding-bottom:16px;break-inside:avoid}
+  .cv-role li{font-size:10pt}
+}
+</style>
 </head>
 <body>
 <nav class="site-nav" aria-label="Main">
@@ -26,70 +98,111 @@
     </div>
   </div>
 </nav>
-<main class="wrap resume">
-  <div class="resume-top">
+
+<header class="cv-hero">
+  <div class="wrap">
     <div>
-      <h1>Mariel Montuori</h1>
-      <p>Washington, DC &nbsp;|&nbsp; marielmontuori@gmail.com &nbsp;|&nbsp; linkedin.com/in/marielmontuori</p>
+      <h1>Mariel <span>Montuori</span></h1>
+      <p class="cv-tag">Product leader across regulated, high-growth, and global-scale businesses</p>
+      <div class="cv-links">
+        <a href="mailto:marielmontuori@gmail.com">marielmontuori@gmail.com</a>
+        <a href="https://linkedin.com/in/marielmontuori">linkedin.com/in/marielmontuori</a>
+        <a href="/">mariel.app</a>
+        <span>Washington, DC</span>
+      </div>
     </div>
-    <a class="btn btn--solid" href="/resume/Mariel_Montuori_Resume.pdf" download>Download PDF</a>
+    <a class="cv-dl" href="/resume/Mariel_Montuori_Resume.pdf" download>Download PDF <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
   </div>
-
-  <h2>Summary</h2>
-  <p>Product leader with 12+ years of experience driving platform modernization, scaling $100M+ eCommerce businesses, and delivering customer-centric digital experiences across regulated and high-growth environments. Known for creating structure in ambiguity, aligning complex stakeholders within matrixed organizations, and translating compliance and operational requirements into scalable product systems. Strengths include AI-enabled strategy development, cross-functional influence, vendor management, and human-centered product execution.</p>
-
-  <h2>Experience</h2>
-
-  <div class="role">
-    <div class="role-head"><b>College Sports Commission, Director, CAPS Product &amp; Operations</b><span>Jan 2026 – Present</span></div>
-    <p class="todo-note" style="margin-bottom:8px"><span class="todo">todo: check these bullets match your latest PDF</span></p>
-    <ul>
-      <li>Designed the first year-end attestation close-out under the House v. NCAA settlement, enabling 319 Division I institutions to validate revenue share, scholarship, and roster data, make corrections, and attest to compliance</li>
-      <li>Used Claude Cowork and the terminal to generate personalized attestation reports for each member school and automate delivery to the correct account holders, giving schools and conferences a way to track progress toward year-end attestation</li>
-      <li>Shipped NCAA Transfer Portal automation that eliminated 16,000+ manual transactions across football and basketball and reduced related support escalations from several hundred to less than 60 — removing a cross-institutional coordination bottleneck that had blocked receiving schools from processing transfers</li>
-      <li>Built product planning and lifecycle infrastructure from scratch. Reduced a 75-feature backlog to 23 prioritized items, established a twice-monthly release cadence (replacing ad-hoc launches), and conducted 16+ stakeholder/user sessions to establish a direct feedback loop between SMEs and the roadmap</li>
-    </ul>
+  <div class="wrap">
+    <div class="cv-strip">
+      <div><b>319</b><span>institutions in the first attestation cycle</span></div>
+      <div><b>$150M → $250M+</b><span>Topps.com DTC revenue</span></div>
+      <div><b>16,000+</b><span>manual transactions eliminated</span></div>
+      <div><b>1M+ / 50M</b><span>accounts / titles migrated, zero data loss</span></div>
+    </div>
   </div>
+</header>
 
-  <div class="role">
-    <div class="role-head"><b>Fanatics, Principal Product Manager, Fanatics Collectibles (Topps.com)</b><span>Apr 2023 – Oct 2025</span></div>
-    <ul>
-      <li>Grew revenue from $150M → $250M projected for 2025 by building the first in-house product &amp; engineering team for the Topps.com DTC business, leading product strategy, developing internal tools to enable scaling new licenses while overseeing end-to-end customer experience, platform, and stakeholder alignment across engineering, marketing, operations, and commerce</li>
-      <li>Improved platform reliability (30%+ site speed, 99%+ uptime) through a headless migration (Shopify + ContentStack) that unlocked service integrations, brought stack ownership in-house, and empowered merchandising and CS to optimize content, inventory, and site management</li>
-      <li>Enabled ~15% growth in product discovery and improved search conversion by leading an SEO-critical site re-architecture, including re-indexing SKU and category taxonomy and launching intent-driven category pages</li>
-    </ul>
+<main class="wrap cv-body">
+  <aside class="cv-side">
+    <section>
+      <h2>Strengths</h2>
+      <div class="cv-chips"><span>AI-enabled strategy</span><span>Platform modernization</span><span>Regulatory compliance</span><span>Cross-functional influence</span><span>Vendor management</span><span>Human-centered execution</span></div>
+    </section>
+    <section>
+      <h2>Tools I build with</h2>
+      <div class="cv-chips alt"><span>Claude</span><span>Claude Cowork</span><span>Python</span><span>Mailchimp API</span><span>Shopify</span><span>ContentStack</span></div>
+    </section>
+    <section class="cv-edu">
+      <h2>Education</h2>
+      <p>MBA, University of Michigan, Ross School of Business<span>2015 – 2017</span></p>
+      <p>BA, Tufts University<span>2004 – 2008</span></p>
+    </section>
+  </aside>
+
+  <div class="cv-main">
+    <p class="cv-summary">Product leader with 12+ years of experience driving platform modernization, scaling $100M+ eCommerce businesses, and delivering customer-centric digital experiences across regulated and high-growth environments. Known for creating structure in ambiguity, aligning complex stakeholders within matrixed organizations, and translating compliance and operational requirements into scalable product systems.</p>
+    <h2>Experience</h2>
+    <div class="cv-roles">
+    <article class="cv-role cv-now">
+      <header>
+        <h3>College Sports Commission</h3>
+        <div class="cv-when"><span>Director, CAPS Product &amp; Operations</span><span>Jan 2026 – Present</span></div>
+      </header>
+      <ul>
+        <li><strong>Enabled 319 Division I institutions to validate revenue share, scholarship, and roster data and attest to compliance with the House v. NCAA settlement</strong> by designing the first year-end close-out process from scratch, with no prior cycle or benchmark to build from</li>
+        <li><strong>Gave every member school and conference a clear view of its attestation progress</strong> by using Claude Cowork and the terminal to generate personalized reports for each school and automate delivery to the correct account holders</li>
+        <li><strong>Eliminated 16,000+ manual transactions and cut related support escalations from several hundred to under 60</strong> by shipping NCAA Transfer Portal automation for football and basketball, unblocking receiving schools from processing transfers</li>
+        <li><strong>Turned a 75-feature backlog into 23 prioritized items and a twice-monthly release cadence</strong> by building CAPS's planning and lifecycle infrastructure from scratch, using AI-assisted prioritization and 16+ stakeholder and user sessions to connect SMEs directly to the roadmap</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>Fanatics Collectibles (Topps.com)</h3>
+        <div class="cv-when"><span>Principal Product Manager</span><span>Apr 2023 – Oct 2025</span></div>
+      </header>
+      <ul>
+        <li><strong>Grew revenue from $150M to $250M+ in two years</strong> by building the first in-house product and engineering team for the Topps.com DTC business and leading product strategy, internal tools for scaling new licenses, and the end-to-end customer experience</li>
+        <li><strong>Improved site speed 30%+ and held uptime above 99%</strong> by leading a headless migration to Shopify and ContentStack that brought stack ownership in-house and let merchandising and customer service manage content, inventory, and site operations directly</li>
+        <li><strong>Grew product discovery ~15% and improved search conversion</strong> by leading an SEO-critical site re-architecture, re-indexing the SKU and category taxonomy, and launching intent-driven category pages</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>Amazon</h3>
+        <div class="cv-when"><span>Senior Product Manager</span><span>Sep 2017 – Mar 2023</span></div>
+      </header>
+      <ul>
+        <li><strong>Migrated 1M+ accounts and 50M titles from ComiXology to Kindle with zero data loss</strong> as GTM lead for the multi-year platform migration</li>
+        <li><strong>Generated $5M+ in new annual revenue and 20%+ YoY growth</strong> by creating a vendor-sponsored recommendation tool for Baby Registry that unlocked a scalable ad model for niche markets</li>
+        <li><strong>Lifted mobile conversion 10% and engagement 15%</strong> by redesigning Baby Registry's item-selection flow based on A/B testing and user insights</li>
+        <li><strong>Increased engagement and retention for 50K+ monthly active users</strong> by launching Kindle's panel-by-panel comics reader across iOS, Android, and web, leading 14 engineers and 2 UX designers</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>Freelance Consultant</h3>
+        <div class="cv-when"><span>Marketing &amp; eCommerce Operations Consultant</span><span>2012 – 2015</span></div>
+      </header>
+      <ul>
+        <li><strong>Delivered 40% YoY sales growth and scaled BaoBae.com from 12 to 50+ vendor partners</strong> as first hire, building brand, community, and marketing strategy from the ground up</li>
+        <li><strong>Expanded visibility for emerging e-commerce brands</strong> by producing 200+ person events and influencer campaigns</li>
+      </ul>
+    </article>
+    <article class="cv-role">
+      <header>
+        <h3>American Chamber of Commerce in China</h3>
+        <div class="cv-when"><span>Program Manager</span><span>Mar 2010 – Mar 2012</span></div>
+      </header>
+      <ul>
+        <li><strong>Doubled programming year over year</strong> across several committees</li>
+        <li><strong>Tripled the internship program</strong> by expanding recruitment and supervising 10+ interns annually</li>
+      </ul>
+    </article>
+    </div>
   </div>
-
-  <div class="role">
-    <div class="role-head"><b>Amazon, Senior Product Manager</b><span>Sep 2017 – Mar 2023</span></div>
-    <ul>
-      <li>Boosted engagement and retention for 50K+ MAUs by launching Kindle's panel-by-panel immersive comics reading UI (across iOS, Android, web), leading a team of 14 engineers and 2 UX designers</li>
-      <li>Executed a seamless migration of 1M+ accounts and 50M titles from ComiXology to Amazon Kindle platform, ensuring zero data loss and improved system efficiency</li>
-      <li>Generated $5M+ in new annual revenue (and 20%+ YoY growth) by creating a vendor-sponsored recommendation tool for the Baby Registry that unlocked a scalable ad model for niche markets</li>
-      <li>Lifted mobile conversion by 10% and increased engagement 15% by redesigning Baby Registry's item-selection flow based on A/B testing and user insights</li>
-    </ul>
-  </div>
-
-  <div class="role">
-    <div class="role-head"><b>Freelance Consultant, Marketing &amp; eCommerce Operations Consultant</b><span>2012 – 2015</span></div>
-    <ul>
-      <li>Scaled BaoBae.com from 12 → 50+ vendor partners and delivered 40% YoY sales growth as first hire, building brand, community, and marketing strategy from the ground up</li>
-      <li>Expanded market visibility and brand equity by producing 200+ person events and influencer campaigns that positioned emerging brands in competitive e-commerce markets</li>
-    </ul>
-  </div>
-
-  <div class="role">
-    <div class="role-head"><b>American Chamber of Commerce in China, Program Manager</b><span>Mar 2010 – Mar 2012</span></div>
-    <ul>
-      <li>Doubled programming YoY across several committees and provided day-to-day program support</li>
-      <li>Grew internship program 3X, increasing recruitment and supervising 10+ interns annually</li>
-    </ul>
-  </div>
-
-  <h2>Education</h2>
-  <div class="edu"><b>MBA, University of Michigan, Ross School of Business</b><span>2015 – 2017</span></div>
-  <div class="edu"><b>BA, Tufts University</b><span>2004 – 2008</span></div>
 </main>
+
 <footer class="wrap page-foot">
   <span>© 2026 Mariel Montuori, Washington, DC</span>
   <span><a href="mailto:marielmontuori@gmail.com">marielmontuori@gmail.com</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/marielmontuori">LinkedIn</a></span>
