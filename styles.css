@@ -206,7 +206,8 @@ p{margin:0}
   .nav-links .show-xs{display:inline}
   .hero h1{font-size:35px}
   .hero p{font-size:18px}
-  .photo{max-width:320px;width:100%}
+  .hero .photo{order:-1;width:104px;max-width:104px;aspect-ratio:1;border-radius:50%;margin-bottom:-8px;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--pop)}
+  .hero .photo img{object-position:50% 25%}
   .timeline{grid-template-columns:1fr;row-gap:32px}
   .timeline::before{top:0;bottom:0;left:7px;right:auto;width:3px;height:auto}
   .timeline li{padding-top:0;padding-left:40px}
