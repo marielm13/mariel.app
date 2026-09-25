@@ -41,26 +41,28 @@
 
   <div class="stat-row">
     <div class="stat"><b>319</b><span>Division I institutions</span></div>
+    <div class="stat"><b>96%</b><span>completed attestation in year one</span></div>
     <div class="stat"><b>5,800+</b><span>teams across Division I</span></div>
-    <div class="stat"><b>3</b><span>data sets validated: revenue share, scholarships, rosters</span></div>
   </div>
 
   <section class="cs grid12">
     <h2>The problem</h2>
     <div class="prose">
       <p>The House v. NCAA settlement created new rules for how Division I schools share revenue with athletes, award scholarships, and manage rosters. At the end of each cap year, schools attest that they followed those rules.</p>
-      <p>This was the first year. There was no process to inherit, no prior cycle to learn from, and no benchmark for how long it should take. The people involved ranged from coaches and compliance officers to athletic directors and university presidents.</p>
+      <p>This was the first year, with an attestation window from July 1 to September 1. There was no process to inherit, no prior cycle to learn from, and no benchmark for how long it should take. The people involved ranged from coaches and compliance officers to athletic directors and university presidents, across 5,800+ Division I teams.</p>
     </div>
   </section>
 
   <section class="cs grid12">
     <h2>What I built</h2>
     <div class="prose">
-      <p>A year-end close-out process in CAPS with three stages.</p>
+      <p>A year-end close-out process in CAPS. Schools validate their revenue share, scholarship, and roster data and correct what's wrong, then move through a five-step sign-off chain.</p>
       <ol class="steps">
-        <li><b>Validate</b><span>Schools review their revenue share, scholarship, and roster data in CAPS.</span></li>
-        <li><b>Correct</b><span>Schools fix any discrepancies before the cap year closes.</span></li>
-        <li><b>Attest</b><span>Schools attest that they complied with the settlement's rules.</span></li>
+        <li><b>Assign attestors</b><span>Each school sets up who signs off at every level.</span></li>
+        <li><b>Coach attestation</b><span>Coaches attest for each of their sports.</span></li>
+        <li><b>Compliance officer</b><span>The compliance office reviews and signs off.</span></li>
+        <li><b>Athletic director</b><span>The athletic director signs off for the department.</span></li>
+        <li><b>President or chancellor</b><span>The head of the institution gives the final attestation.</span></li>
       </ol>
       <p>To keep every school informed along the way, I built personalized progress reports for each member school and automated their delivery. <a href="/work/report-automation/">How I built the reports</a></p>
     </div>
@@ -69,7 +71,8 @@
   <section class="cs grid12">
     <h2>My role</h2>
     <div class="prose">
-      <p><span class="todo">todo: who you worked with (engineering, legal, conference offices) and the decisions you owned, such as how the stages were sequenced or what counted as a correction</span></p>
+      <p>I worked with conference general counsels and athletic directors to get buy-in on the process, since some requirements came from NCAA bylaws based on the House settlement. With our development partners at LBi, I designed the flow and wrote the requirements.</p>
+      <p>One decision I owned: keeping attestation inside CAPS instead of building a separate microsite. That reduced data privacy risk and cut development time.</p>
     </div>
   </section>
 
@@ -77,14 +80,18 @@
     <h2>Results</h2>
     <div class="prose">
       <p>Because this was a first-time process, the results are measured against the goal rather than a prior year.</p>
-      <p><span class="todo">todo: completion rate, on-time attestations, corrections made, or support volume</span></p>
+      <p>Nearly all 319 schools completed attestation (96%) in the first year of a process that didn't exist before.</p>
     </div>
   </section>
 
   <section class="cs grid12">
     <h2>What I'd change next cap year</h2>
     <div class="prose">
-      <p><span class="todo">todo: one or two things you learned and would do differently</span></p>
+      <p>Reconciling incorrect or incomplete data took a lot of surge support. Next cap year, I'd build two things:</p>
+      <ul class="plain-list">
+        <li>Customer-facing tools that let schools correct or update their agreement data themselves.</li>
+        <li>Internal support tools that let our team reconcile rosters without engineering help.</li>
+      </ul>
     </div>
   </section>
 </main>
