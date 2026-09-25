@@ -3,110 +3,66 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="https://mariel.app/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#651C32">
+<link rel="stylesheet" href="/styles.css">
 <title>What makes a great product manager | Mariel Montuori</title>
 <meta name="description" content="It's not an exhaustive list of hard skills or mastery of every framework. It comes down to three things.">
 <meta property="og:title" content="What makes a great product manager">
 <meta property="og:description" content="It's not an exhaustive list of hard skills or mastery of every framework. It comes down to three things.">
 <meta property="og:type" content="article">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23651C32'/><text x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23EBEAE8' text-anchor='middle'>M</text></svg>">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#EBEAE8; --ink:#241A1B; --body:#433739; --muted:#5C5153; --rule:#D2CDC9; --pop:#67823A; --accent-dark:#4A1425;
-  --accent:#651C32;
-  --serif:'Syne','Hanken Grotesk',system-ui,sans-serif;
-  --sans:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
-  --mono:'Hanken Grotesk',system-ui,sans-serif;
-  --pad:clamp(20px,6.5vw,96px);
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.wrap{padding-inline:var(--pad)}
-nav{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-block:24px;border-bottom:1px solid var(--rule)}
-.brand{font-family:var(--serif);font-size:22px;font-weight:800;text-decoration:none}
-.links{display:flex;gap:32px;align-items:center;font-size:15px;font-weight:600}
-.links a{text-decoration:none}
-.links a:hover{color:var(--accent)}
-.links .pill{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;background:var(--accent);color:var(--paper);border-radius:999px}
-.links .pill:hover{background:var(--accent-dark);color:var(--paper)}
-
-article{max-width:720px;margin:0 auto;padding-block:clamp(56px,8vw,112px) clamp(64px,8vw,120px)}
-.back{display:inline-block;font-size:15px;font-weight:500;text-decoration:none;color:var(--muted);margin-bottom:40px}
-.back:hover{color:var(--accent)}
-.meta{font-size:15px;font-weight:700;color:var(--accent);margin-bottom:20px}
-h1{font-family:var(--serif);font-weight:700;font-size:clamp(40px,5vw,60px);line-height:1.06;letter-spacing:-.02em;margin:0 0 48px}
-.post p{font-size:19px;line-height:1.7;color:var(--body);margin:0 0 24px}
-.post h2{font-family:var(--serif);font-weight:700;letter-spacing:-.01em;font-size:clamp(24px,2.6vw,30px);line-height:1.2;margin:56px 0 16px;color:var(--ink)}
-.post h2 .num{color:var(--pop);margin-right:8px}
-.close{margin-top:56px;padding-top:32px;border-top:3px solid var(--pop)}
-.close p{font-family:var(--serif);font-weight:700;font-size:24px;line-height:1.4;color:var(--ink);margin:0 0 24px}
-.btn{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;background:var(--accent);color:var(--paper)}
-.btn:hover{background:var(--accent-dark)}
-
-footer{background:var(--accent);color:var(--paper);padding-block:48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:15px}
-footer a{text-decoration:none;font-weight:600}
-footer a:hover{text-decoration:underline}
-footer a:focus-visible{outline-color:var(--paper)}
-
-@media (max-width:1000px){.links a:not(.pill){display:none}}
-</style>
 </head>
 <body>
-
-<header class="wrap">
-<nav aria-label="Main">
-<a class="brand" href="/">Mariel Montuori</a>
-<div class="links">
-<a href="/#ai">AI</a>
-<a href="/#work">Work</a>
-<a href="/#writing">Writing</a>
-<a href="/#about">About</a>
-<a class="pill" href="/#contact">Get in touch</a>
-</div>
+<nav class="site-nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="/">Mariel Montuori</a>
+    <div class="nav-links">
+      <a class="hide-sm" href="/#ai">AI</a>
+      <a class="hide-xs" href="/#work">Work</a>
+      <a class="hide-sm" href="/writing/">Writing</a>
+      <a class="hide-sm" href="/#about">About</a>
+      <a href="/resume/">Resume</a>
+      <a class="cta" href="/#contact"><span class="hide-xs">Get in touch</span><span class="show-xs">Contact</span></a>
+    </div>
+  </div>
 </nav>
-</header>
-
 <main class="wrap">
-<article>
-<a class="back" href="/#writing">All writing</a>
-<div class="meta">Product management · 2 min read</div>
-<h1>What makes a great product manager</h1>
-
-<div class="post">
-<p>I was recently asked in an interview what I think makes a great product manager.</p>
-<p>In my opinion, it's not an exhaustive list of hard skills or mastery of every framework (no PM will tell you that PRD writing is what makes a PM great). It comes down to three things.</p>
-
-<h2><span class="num">1.</span>Being a clarity machine</h2>
-<p>A great PM can take messy inputs (research, feedback, stakeholder opinions, and ambiguity) and turn them into a strategy people actually understand. Not just what we're building, but why, for whom, and what we're not doing (and again, why).</p>
-<p>This takes strong judgment and clear communication, especially since the information is almost never complete.</p>
-
-<h2><span class="num">2.</span>Knowing when to iterate vs. invent</h2>
-<p>This means seeing the big picture, recognizing patterns, and evaluating tradeoffs. It's understanding when the current solution needs refinement and when an experience needs an entirely new approach.</p>
-
-<h2><span class="num">3.</span>Soft skills (the unglamorous, silent majority of the job)</h2>
-<p>Product management is less about authority and more about influence. Much of the work involves navigating strong personalities, earning trust across teams, and aligning people with different incentives. It requires managing tension, resolving disagreements, and helping teams move forward even when there isn't a clear or perfect answer.</p>
-
-<h2>What makes product management especially hard</h2>
-<p>Most of this work isn't easily measurable. Soft skills and judgment can't be learned quickly or taught as theory.</p>
-<p>You become a good (and eventually great) PM by doing the job: making decisions with imperfect information, getting some of them wrong, learning from the outcomes, and slowly building better instincts over time.</p>
-</div>
-
-<div class="close">
-<p>Fellow PMs, what do you think? Am I missing any major qualities that make a great PM?</p>
-<!-- LINKEDIN: replace the href below with this post's LinkedIn URL -->
-<a class="btn" href="https://linkedin.com/in/marielmontuori" target="_blank" rel="noopener">Join the conversation on LinkedIn</a>
-</div>
-</article>
+  <a class="back" href="/writing/">All writing</a>
+  <header class="post-head">
+    <div class="kicker"><span class="tag">Product management</span><span class="time">2 min read</span></div>
+    <h1>What makes a great product manager</h1>
+    <p class="dek">It's not an exhaustive list of hard skills or mastery of every framework. It comes down to three things.</p>
+  </header>
+  <article class="post-body">
+    <p>I was recently asked in an interview what I think makes a great product manager.</p>
+    <p>In my opinion, it's not an exhaustive list of hard skills or mastery of every framework (no PM will tell you that PRD writing is what makes a PM great). It comes down to three things.</p>
+    <h2><span class="num">1.</span>Being a clarity machine</h2>
+    <p>A great PM can take messy inputs (research, feedback, stakeholder opinions, and ambiguity) and turn them into a strategy people actually understand. Not just what we're building, but why, for whom, and what we're not doing (and again, why).</p>
+    <p>This takes strong judgment and clear communication, especially since the information is almost never complete.</p>
+    <h2><span class="num">2.</span>Knowing when to iterate vs. invent</h2>
+    <p>This means seeing the big picture, recognizing patterns, and evaluating tradeoffs. It's understanding when the current solution needs refinement and when an experience needs an entirely new approach.</p>
+    <h2><span class="num">3.</span>Soft skills (the unglamorous, silent majority of the job)</h2>
+    <p>Product management is less about authority and more about influence. Much of the work involves navigating strong personalities, earning trust across teams, and aligning people with different incentives. It requires managing tension, resolving disagreements, and helping teams move forward even when there isn't a clear or perfect answer.</p>
+    <h2>What makes product management especially hard</h2>
+    <p>Most of this work isn't easily measurable. Soft skills and judgment can't be learned quickly or taught as theory.</p>
+    <p>You become a good (and eventually great) PM by doing the job: making decisions with imperfect information, getting some of them wrong, learning from the outcomes, and slowly building better instincts over time.</p>
+  </article>
+  <div class="post-close">
+    <p>Fellow PMs, what do you think?</p>
+    <!-- LINKEDIN: replace the href below with this post's LinkedIn URL -->
+    <a class="btn" href="https://linkedin.com/in/marielmontuori" target="_blank" rel="noopener">Join the conversation on LinkedIn</a>
+  </div>
+  <a class="post-next" href="/writing/ai-fomo-is-real/"><div><small>Next post</small><strong>AI FOMO is real</strong></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
 </main>
-
-<footer class="wrap">
-<span>© 2026 Mariel Montuori</span>
-<a href="mailto:marielmontuori@gmail.com">marielmontuori@gmail.com</a>
+<footer class="wrap page-foot">
+  <span>© 2026 Mariel Montuori, Washington, DC</span>
+  <span><a href="mailto:marielmontuori@gmail.com">marielmontuori@gmail.com</a> &nbsp;|&nbsp; <a href="https://linkedin.com/in/marielmontuori">LinkedIn</a></span>
 </footer>
-
 </body>
 </html>
