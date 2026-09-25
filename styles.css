@@ -152,7 +152,7 @@ p{margin:0}
 .steps li::before{content:counter(s);grid-row:span 2;font-family:var(--display);font-weight:700;font-size:28px;line-height:1.1;color:var(--pop)}
 .steps b{color:var(--ink);font-size:18px}
 .shot{margin:0;aspect-ratio:16/9;border-radius:8px;background:var(--photo);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:var(--muted);font-size:15px}
-.page-foot{padding:56px 0 64px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:15px}
+.page-foot{padding-top:56px;padding-bottom:64px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:15px}
 .page-foot a{font-weight:700}
 
 /* Resume */
@@ -224,4 +224,81 @@ p{margin:0}
   .stat-row{grid-template-columns:1fr}
   .cs{padding:44px 0}
   .resume-top h1{font-size:36px}
+}
+
+/* ---------- Writing landing ---------- */
+.wl-head{background:var(--band);color:var(--band-text)}
+.wl-head .wrap{padding-top:72px;padding-bottom:64px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:end}
+.wl-head h1{grid-column:span 8;font-size:88px;font-weight:800;line-height:.95;letter-spacing:-.04em}
+.wl-head h1 span{color:#B7C98F}
+.wl-head p{grid-column:9 / span 4;font-size:18px;color:var(--band-body)}
+.wl-feature{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;margin-top:64px;padding:56px 0;border-top:3px solid var(--pop);border-bottom:1px solid var(--rule);text-decoration:none;color:inherit}
+.wl-feature .quote{grid-column:span 7;font-family:var(--display);font-weight:700;font-size:48px;line-height:1.08;letter-spacing:-.025em;color:var(--accent)}
+.wl-feature .quote::before{content:"\201C";display:block;font-size:110px;line-height:.6;color:var(--pop);margin-bottom:8px}
+.wl-feature .meta{grid-column:9 / span 4;display:flex;flex-direction:column;gap:14px;align-self:end}
+.wl-feature h2{font-size:34px;line-height:1.1}
+.wl-feature p{color:var(--body)}
+.kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;font-weight:700}
+.kicker .tag{padding:5px 12px;border-radius:999px;background:var(--chip)}
+.kicker .time{color:var(--muted)}
+.wl-list{margin-top:8px}
+.wl-row{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center;padding:40px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:inherit}
+.wl-row .kicker{grid-column:span 3}
+.wl-row h2{grid-column:4 / span 6;font-size:40px;line-height:1.08;letter-spacing:-.025em}
+.wl-row p{grid-column:4 / span 6;color:var(--body);margin-top:10px}
+.wl-row .go{grid-column:11 / span 2;justify-self:end;width:56px;height:56px;border-radius:50%;border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:center}
+.wl-row:hover h2,.wl-feature:hover h2{color:var(--accent)}
+.wl-row:hover .go{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.wl-series{margin:88px 0 112px;padding:48px;border-radius:12px;background:var(--chip);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:end}
+.wl-series div{grid-column:span 8;display:flex;flex-direction:column;gap:12px}
+.wl-series h2{font-size:36px;line-height:1.1}
+.wl-series p{color:var(--body);max-width:60ch}
+.wl-series .btn{grid-column:10 / span 3;justify-self:end}
+
+/* ---------- Blog post ---------- */
+.post-head{padding-top:40px;padding-bottom:56px;border-bottom:3px solid var(--pop);margin-bottom:56px}
+.post-head h1{font-size:76px;font-weight:800;line-height:.98;letter-spacing:-.04em;margin:24px 0 20px;max-width:14ch}
+.post-head .dek{font-size:22px;line-height:1.5;color:var(--body);max-width:52ch}
+.post-body{max-width:680px;font-size:19px;line-height:1.7;color:var(--body)}
+.post-body p{margin:0 0 22px}
+.post-body h2{font-size:30px;line-height:1.15;color:var(--ink);margin:52px 0 16px}
+.post-body h2 .num{color:var(--pop);margin-right:12px}
+.post-body ul{list-style:none;margin:8px 0 28px;padding:0}
+.post-body li{padding:14px 0 14px 28px;border-top:1px solid var(--rule);position:relative}
+.post-body li:last-child{border-bottom:1px solid var(--rule)}
+.post-body li::before{content:"";position:absolute;left:0;top:27px;width:14px;height:3px;background:var(--pop)}
+.post-body .pull{font-family:var(--display);font-weight:700;font-size:36px;line-height:1.15;letter-spacing:-.02em;color:var(--accent);margin:48px 0 40px;padding-left:24px;border-left:4px solid var(--pop)}
+.post-close{max-width:680px;margin:56px 0 0;padding:40px;border-radius:12px;background:var(--band);color:var(--band-text)}
+.post-close p{font-family:var(--display);font-weight:700;font-size:26px;line-height:1.2;margin-bottom:24px}
+.post-close .btn{border-color:var(--band-text);background:var(--band-text);color:var(--band)}
+.post-next{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:72px 0 24px;padding:32px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);text-decoration:none}
+.post-next small{display:block;font-size:14px;font-weight:700;color:var(--muted);margin-bottom:6px}
+.post-next strong{font-family:var(--display);font-size:30px;line-height:1.15}
+.post-next:hover strong{color:var(--accent)}
+
+@media (max-width:1100px){
+  .wl-head h1{font-size:68px}
+  .wl-feature .quote{font-size:38px}
+  .post-head h1{font-size:60px}
+}
+@media (max-width:820px){
+  .wl-head .wrap,.wl-feature,.wl-row,.wl-series{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+  .wl-head .wrap{padding-top:44px;padding-bottom:40px}
+  .wl-head h1{font-size:48px}
+  .wl-feature{margin-top:40px;padding:40px 0}
+  .wl-feature .quote{font-size:30px}
+  .wl-feature .quote::before{font-size:80px}
+  .wl-row{padding:28px 0}
+  .wl-row h2{font-size:28px}
+  .wl-row .go{align-self:flex-end;width:48px;height:48px;margin-top:-8px}
+  .wl-series{padding:28px;margin:56px 0 72px}
+  .wl-series h2{font-size:28px}
+  .post-head h1{font-size:42px}
+  .post-head .dek{font-size:19px}
+  .post-body{font-size:17px}
+  .post-body h2{font-size:24px}
+  .post-body .pull{font-size:26px}
+  .post-close{padding:28px}
+  .post-close p{font-size:21px}
+  .post-next strong{font-size:22px}
 }
