@@ -236,17 +236,14 @@ p{margin:0}
 .wl-head cite{display:block;margin-top:12px;font-style:normal;font-size:14px;font-weight:600;color:var(--band-muted)}
 .wl-head cite a{color:var(--band-text)}
 .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;margin:56px 0 112px}
-.tile{display:flex;flex-direction:column;gap:18px;padding:32px;border-radius:12px;background:#F5F4F2;border:1px solid var(--rule);border-top:4px solid var(--pop);text-decoration:none;color:inherit;min-height:360px}
-.tile .q{font-family:var(--display);font-weight:700;font-size:24px;line-height:1.2;letter-spacing:-.015em;color:var(--accent)}
-.tile .q::before{content:"\201C";display:block;font-size:64px;line-height:.55;color:var(--pop);margin-bottom:6px}
-.tile h2{font-size:22px;line-height:1.2;margin-top:auto;padding-top:18px;border-top:1px solid var(--rule)}
-.tile .more{font-size:15px}
+.tile{display:flex;flex-direction:column;gap:16px;padding:32px;border-radius:12px;background:#F5F4F2;border:1px solid var(--rule);border-top:4px solid var(--pop);text-decoration:none;color:inherit;min-height:320px}
+.tile h2{font-size:30px;line-height:1.1;letter-spacing:-.025em}
+.tile .q{margin:0;padding-left:14px;border-left:3px solid var(--pop);font-size:17px;line-height:1.5;font-style:italic;color:var(--body)}
+.tile p:not(.q){color:var(--body)}
+.tile .more{margin-top:auto;font-size:15px}
 .tile:hover{border-color:var(--accent);border-top-color:var(--accent)}
 .tile:hover h2{color:var(--accent)}
 .tile--series{background:var(--chip);border-color:var(--chip);border-top-color:var(--accent)}
-.tile--series .q::before{content:none}
-.tile--series .q{color:var(--ink)}
-.tile--series p{color:var(--body)}
 .kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;font-weight:700}
 .kicker .tag{padding:5px 12px;border-radius:999px;background:var(--chip)}
 .tile--series .kicker .tag{background:#F5F4F2}
@@ -284,6 +281,7 @@ p{margin:0}
   .wl-head blockquote p{font-size:22px}
   .tiles{grid-template-columns:1fr;margin:32px 0 72px}
   .tile{min-height:0;padding:26px}
+  .tile h2{font-size:26px}
   .post-head h1{font-size:42px}
   .post-head .dek{font-size:19px}
   .post-body{font-size:17px}
